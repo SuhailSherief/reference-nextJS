@@ -1,14 +1,12 @@
 import Head from 'next/head'
 import ArticleList from '../components/ArticleList'
 import { server } from './../config/index'
+import Meta from '../components/Meta'
 
 export default function Home({articles}) {
   return (
     <div>
-      <Head>
-      <title>LofiCafe</title>
-        <meta name='lofi.cafe' content='Chill to lofi beats'/>
-      </Head>
+      <Meta />
       <h1>Welcome to next</h1>
       <ArticleList articles = {articles} />
     </div>
